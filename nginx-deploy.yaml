@@ -1,19 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  # Define the Deployment Name
   labels:
     app: nginx
   name: nginx
 spec:
+  # Define the Number of Pods
   replicas: 2
   selector:
+    # Define the Selector
     matchLabels:
       app: nginx
   template:
+    # template for pod
     metadata:
       labels:
         app: nginx
     spec:
+      # Container Details
       containers:
+      # image details
       - image: nginx
         name: nginx
