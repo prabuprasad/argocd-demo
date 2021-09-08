@@ -21,5 +21,5 @@ spec:
       # Container Details
       containers:
       # image details
-      - image: scmgalaxy/nginx-devopsschoolv1
+      - image: scmgalaxy/nginx-devopsschoolv2
         name: nginx
